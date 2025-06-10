@@ -90,6 +90,7 @@ namespace MvcDebuggingExam.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpPost]
         public IActionResult DeleteConfirmed(int id)
         {
             var product = products.FirstOrDefault(p => p.Id == id);
